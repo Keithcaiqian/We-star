@@ -1,0 +1,11 @@
+<view class="rate">
+  <view class="starBox" wx:for='{{num}}' wx:key="index"
+   data-index='{{index}}' 
+   bindtap="starClick"
+   style="margin-right:{{index%2==1?gutter:0}}rpx;width:{{size/2}}rpx;height:{{size}}rpx">
+    <image wx:if="{{item==1}}" src="./images/s1.png" class="star" ></image>
+    <image wx:if="{{item==2}}" src="./images/s2.png" class="star" ></image>
+    <image wx:if="{{item==3}}" src="./images/s3.png" class="star" ></image>
+    <image wx:if="{{item==4}}" src="./images/s4.png" class="star" ></image>
+  </view>
+</view>
